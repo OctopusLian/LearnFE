@@ -1,0 +1,12 @@
+
+.footer {
+    padding: 0 16px;
+    background-color: #eeeeee;
+    margin-top: 8px;
+  }
+  .footer #alert {
+    width: 96px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+  }

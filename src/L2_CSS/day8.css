@@ -1,0 +1,11 @@
+
+<style>
+.main {
+    display: grid;
+}
+div div {
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+}
+</style>

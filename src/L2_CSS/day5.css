@@ -1,0 +1,6 @@
+p:nth-child(1) {
+    background-color: blue;
+    position: relative;
+    right: 20px;
+    left: 10px;
+}

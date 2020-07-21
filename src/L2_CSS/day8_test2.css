@@ -1,0 +1,55 @@
+.main {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+}
+.container {
+    /*使用固定宽度，在 container 中设置具体的值，不同值使用空格隔开：*/
+    grid-template-columns: 60px 100px;
+
+    /*使用百分比，直接占满容器 40% + 60% = 100%：
+    grid-template-columns: 40% 60%;
+    */
+
+    /*使用弹性单位 fr，可以按比例分配容器的大小。总共分成 3 份，第一列占 1份，第二列占 2份：
+    grid-template-columns: 1fr 2fr;
+    */
+
+    /*使用关键字 auto，它会填满容器的可用空间：
+    grid-template-columns: 100px auto;
+    */
+
+    /*使用 minmax 设置长度范围，接受 2 个参数，分别表示最大值和最小值。下面设置列的最小宽度为 100px，最大宽度为 1fr。
+    grid-template-columns: minmax(100px, 1fr) 1fr;
+    */
+
+    /*使用 repeat 可以表示多个值，grid-template-columns：repeat(2, 1fr) 与grid-template-columns：1fr 1fr 等价。
+    grid-template-columns: repeat(2, 1fr);
+    */
+
+    /*max-content: 内容的最大宽度，min-content 内容的最小宽度。下面的例子中恰好显示单行文字的最大宽度。
+    grid-template-columns: repeat(2, max-content);
+    */
+
+    display: grid;
+}
+div div {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+div div:nth-child(1) {
+    background-color: #FE0000;
+}
+
+div div:nth-child(2) {
+    background-color: #F5A623;
+}
+
+div div:nth-child(3) {
+    background-color: #BD10E0;
+}
+div div:nth-child(4) {
+    background-color: #F04A4D;
+}
